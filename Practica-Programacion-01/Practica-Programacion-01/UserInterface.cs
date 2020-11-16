@@ -6,39 +6,39 @@ namespace Practica_Programacion_01
 {
     class UserInterface
     {
-        public static void PrintPotenciaMenu()
+        public static void PrintPowerMenu()
         {
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("Menñu de potencias");
+            PrintTittleInRed("Menñu de potencias");
             System.Console.WriteLine("----------------");
 
         }
 
-        public static void PrintSumatoryMenu()
+        public static void PrintSummationMenu()
         {
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("Menú del sumatorio");
+            PrintTittleInRed("Menú del sumatorio");
             System.Console.WriteLine("----------------");
         }
 
         public static void PrintFactorialMenu()
         {
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("Menú del factorial");
+            PrintTittleInRed("Menú del factorial");
             System.Console.WriteLine("----------------");
         }
 
         public static void PrintPrimeMenu()
         {
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("Menú de números primos");
+            PrintTittleInRed("Menú de números primos");
             System.Console.WriteLine("----------------");
         }
 
         public static void PrintFibonacciMenu()
         {
             System.Console.WriteLine("----------------");
-            System.Console.WriteLine("Menú de la serie de Fibonacci");
+            PrintTittleInRed("Menú de la serie de Fibonacci");
             System.Console.WriteLine("----------------");
         }
 
