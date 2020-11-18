@@ -4,6 +4,13 @@ namespace Practica_Programacion_01
 {
     class Program
     {
+        public static void LaunchPowerMenu()
+        {
+            UserInterface.PrintPowerMenu();
+            ControllerUtilities.ReadIntValue("Introduce un valor");
+            MathsModel.PowerFunction();
+        }
+
         public static void LaunchMainMenu()
         {
             UserInterface.PrintMainMenu();
