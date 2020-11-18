@@ -7,6 +7,21 @@ namespace Practica_Programacion_01
         public static void LaunchMainMenu()
         {
             UserInterface.PrintMainMenu();
+            switch (ControllerUtilities.ReadMenuOptionValue(0, 5))
+            {
+                case 0:
+                    break;
+                case 1:                    
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+            }
             
         }
         static void Main(string[] args)
@@ -15,12 +30,16 @@ namespace Practica_Programacion_01
             //System.Console.WriteLine("Probando los colores", Console.ForegroundColor = ConsoleColor.Red);
             //Console.WriteLine("Texto en color normal", Console.ForegroundColor = ConsoleColor.White);
             //Console.WriteLine(MathsModel.Power(2, 4));
+            /*
             while (true)
             {
                 int value = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(MathsModel.IsPrimeFunction(value));
+                MathsModel.FibonacciFunction(value);
             }
-            
+            */
+            LaunchMainMenu();
+
+
         }
     }
 }

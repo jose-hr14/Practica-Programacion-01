@@ -50,10 +50,25 @@ namespace Practica_Programacion_01
             return true;            
         }
 
-        public static int FibonacciFunction(int value)
+        public static void FibonacciFunction(int value)
         {
-            int peo = 0;
-            return peo;
+            //0, 1, 1, 2, 3, 5, 8,13, 21
+            int Fibo1 = 0;
+            int Fibo2 = 1;
+            int Fibo3 = Fibo1 + Fibo2;
+            Console.Write(Fibo1 + ", " + Fibo2 + ", " + Fibo3 + ", ");
+
+            for (int i = 0; i < value; i++)
+            {
+                Fibo1 = Fibo2;
+                Fibo2 = Fibo3;
+                Fibo3 = Fibo1 + Fibo2;
+                if (i != (value - 1))
+                    System.Console.Write(Fibo3 + ", ");
+                else
+                    System.Console.Write(Fibo3 + "...");
+            }
+
         }
     }
 }
