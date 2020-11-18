@@ -40,9 +40,11 @@ namespace Practica_Programacion_01
 
         public static bool IsPrimeFunction(int value)
         {
-            for (int i = 0; i < value; i++)
-            {
-                if (value / i == 0 && i != 0)
+            if (value == 0 || value == 1)
+                return false;
+            for (int i = 1; i < value; i++)
+            {                                    
+                if (value % i == 0 && i != 1)
                     return false;                
             }
             return true;            

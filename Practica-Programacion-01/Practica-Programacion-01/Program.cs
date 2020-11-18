@@ -15,7 +15,12 @@ namespace Practica_Programacion_01
             //System.Console.WriteLine("Probando los colores", Console.ForegroundColor = ConsoleColor.Red);
             //Console.WriteLine("Texto en color normal", Console.ForegroundColor = ConsoleColor.White);
             //Console.WriteLine(MathsModel.Power(2, 4));
-            Console.WriteLine(MathsModel.IsPrimeFunction(4));
+            while (true)
+            {
+                int value = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(MathsModel.IsPrimeFunction(value));
+            }
+            
         }
     }
 }
