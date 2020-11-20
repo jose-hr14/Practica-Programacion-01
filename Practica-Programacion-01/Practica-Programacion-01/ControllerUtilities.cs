@@ -6,6 +6,12 @@ namespace Practica_Programacion_01
 {
     class ControllerUtilities
     {
+        public static void WaitForInputToContinue()
+        {
+            Console.WriteLine("Pulse una tecla para continuar");
+            Console.ReadLine();
+        }
+
         public static int ReadMenuOptionValue(int MinOptionValue, int MaxOptionValue)
         {
             Console.Write("\n" + "Introduce un valor entre " + MinOptionValue + " y " + MaxOptionValue + " para seleccionar una opción: ");

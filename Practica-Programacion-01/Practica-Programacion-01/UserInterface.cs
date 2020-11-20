@@ -9,8 +9,9 @@ namespace Practica_Programacion_01
         public static void PrintPowerMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menñu de potencias");
+            PrintTittleInRed("Menu de potencias");
             System.Console.WriteLine("----------------");
+            System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número y su potencia, y posteriormente imprimirá por pantalla el resultado");
 
         }
 
@@ -19,6 +20,7 @@ namespace Practica_Programacion_01
             System.Console.WriteLine("----------------");
             PrintTittleInRed("Menú del sumatorio");
             System.Console.WriteLine("----------------");
+            System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla el resultado del sumatorio");
         }
 
         public static void PrintFactorialMenu()
@@ -26,6 +28,7 @@ namespace Practica_Programacion_01
             System.Console.WriteLine("----------------");
             PrintTittleInRed("Menú del factorial");
             System.Console.WriteLine("----------------");
+            System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla el resultado del factorial");
         }
 
         public static void PrintPrimeMenu()
@@ -42,11 +45,12 @@ namespace Practica_Programacion_01
             System.Console.WriteLine("----------------");
         }
 
-        public static void PrintTittleInRed(string tittle)
-        {
+        public static void PrintTittleInRed(string title)
+        {            
+            
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(tittle);
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(title);
+            Console.ResetColor();
         }
         
         public static void PrintMainMenu()
