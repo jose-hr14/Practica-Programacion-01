@@ -31,7 +31,7 @@ namespace Practica_Programacion_01
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla el resultado del factorial");
         }
 
-        public static void PrintPrimeMenu()
+        public static void PrintIsPrimeMenu()
         {
             System.Console.WriteLine("----------------");
             PrintTittleInRed("Menú de números primos");

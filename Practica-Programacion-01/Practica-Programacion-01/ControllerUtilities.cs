@@ -5,10 +5,10 @@ using System.Text;
 namespace Practica_Programacion_01
 {
     class ControllerUtilities
-    {
-        public static void WaitForInputToContinue()
+    {        
+        public static void WaitForInputToContinue(string TextAskingForInput)
         {
-            Console.WriteLine("Pulse una tecla para continuar");
+            Console.WriteLine("\n" + TextAskingForInput);
             Console.ReadLine();
         }
 
