@@ -12,7 +12,7 @@ namespace Practica_Programacion_01
             Console.ReadLine();
         }
 
-        public static int ReadMenuOptionValue(int MinOptionValue, int MaxOptionValue)
+        public static int ReadMenuOption(int MinOptionValue, int MaxOptionValue)
         {
             Console.Write("\n" + "Introduce un valor entre " + MinOptionValue + " y " + MaxOptionValue + " para seleccionar una opción: ");
             while (true)
