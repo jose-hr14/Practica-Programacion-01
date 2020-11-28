@@ -45,10 +45,9 @@ namespace Practica_Programacion_01
         public static void LaunchPowerMenu()
         {
             UserInterface.PrintSummationMenu();
-            int value = ControllerUtilities.ReadIntValue("Introduce un valor: ");
-            int power = ControllerUtilities.ReadIntValue("Introduce su potencia: ");
-            int result = MathsModel.PowerFunction(value, power);
-            Console.WriteLine("El resultado de " + value + "^" + power + " es " + result);
+            int value = ControllerUtilities.ReadIntValue("Introduce un valor: ");            
+            int result = MathsModel.PowerFunction(value);
+            Console.WriteLine("El resultado de la potencia en base 2 de " + value + " es " + result); // modificar
             ControllerUtilities.WaitForInputToContinue("Pulse una tecla para continuar");
         }
 

@@ -9,7 +9,7 @@ namespace Practica_Programacion_01
         public static void PrintPowerMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menu de potencias");
+            PrintTittleWithColor("Menu de potencias", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número y su potencia, y posteriormente imprimirá por pantalla el resultado \n");
 
@@ -18,7 +18,7 @@ namespace Practica_Programacion_01
         public static void PrintSummationMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menú del sumatorio");
+            PrintTittleWithColor("Menú del sumatorio", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla el resultado del sumatorio \n");
         }
@@ -26,7 +26,7 @@ namespace Practica_Programacion_01
         public static void PrintFactorialMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menú del factorial");
+            PrintTittleWithColor("Menú del factorial", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla el resultado del factorial \n");
         }
@@ -34,7 +34,7 @@ namespace Practica_Programacion_01
         public static void PrintIsPrimeMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menú de números primos");
+            PrintTittleWithColor("Menú de números primos", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla si es primo o no \n");
         }
@@ -42,23 +42,24 @@ namespace Practica_Programacion_01
         public static void PrintFibonacciMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menú de la serie de Fibonacci");
+            PrintTittleWithColor("Menú de la serie de Fibonacci", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("A través de este menú, el programa pedirá la entrada de un número e imprimirá por pantalla esa cantidad de números de la serie \n");
         }
 
-        public static void PrintTittleInRed(string title)
+        public static void PrintTittleWithColor(string title, ConsoleColor Color)
         {            
             
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = Color;
             Console.WriteLine(title);
             Console.ResetColor();
         }
         
+
         public static void PrintMainMenu()
         {
             System.Console.WriteLine("----------------");
-            PrintTittleInRed("Menú principal");
+            PrintTittleWithColor("Menú principal", ConsoleColor.Red);
             System.Console.WriteLine("----------------");
             System.Console.WriteLine("  1) Potencia en base 2");
             System.Console.WriteLine("  2) Sumatorio de un número");
