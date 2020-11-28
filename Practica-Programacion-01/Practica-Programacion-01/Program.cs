@@ -4,6 +4,15 @@ namespace Practica_Programacion_01
 {
     class Program
     {
+        /// <summary>
+        /// Esta función lanzará el controlador del submenú
+        /// de la serie de Fibonacci. Pedirá al usuario un
+        /// número, y se imprimirán una cantidad concreta de 
+        /// números de la serie, determinada por el número que
+        /// ha introducido el usuario. 
+        /// Cuando el controlador cumple su función, espera input 
+        /// del usuario para regresar al menú principal.
+        /// </summary>
         public static void LaunchFibonacciMenu()
         {
             UserInterface.PrintFibonacciMenu();
@@ -12,6 +21,15 @@ namespace Practica_Programacion_01
             ControllerUtilities.WaitForInputToContinue("Pulse una tecla para continuar");
 
         }
+
+        /// <summary>
+        /// Esta función lanzará el controlador del submenú
+        /// de números primos. Pedirá un número al usuario e
+        /// imprimirá por pantalla si el número introducido
+        /// es primo o no.
+        /// Cuando el controlador cumple su función, espera input 
+        /// del usuario para regresar al menú principal.
+        /// </summary>
         public static void LaunchIsPrimelMenu()
         {
             UserInterface.PrintIsPrimeMenu();
@@ -23,6 +41,13 @@ namespace Practica_Programacion_01
             ControllerUtilities.WaitForInputToContinue("Pulse una tecla para continuar");
         }
 
+        /// <summary>
+        /// Esta función lanzará el controlador del submenú de
+        /// factoriales. Pedirá al usuario un número e 
+        /// imprimirá por pantalla su factorial.
+        /// Cuando el controlador cumple su función, espera input 
+        /// del usuario para regresar al menú principal.
+        /// </summary>
         public static void LaunchFactorialMenu()
         {
             UserInterface.PrintFactorialMenu();
@@ -33,6 +58,13 @@ namespace Practica_Programacion_01
 
         }
 
+        /// <summary>
+        /// Esta función lanzará el controlador del submenú de
+        /// sumatorios. Pedirá al usuario un número e imprimirá
+        /// por pantalla el resultado de su sumatorio.
+        /// Cuando el controlador cumple su función, espera input 
+        /// del usuario para regresar al menú principal.
+        /// </summary>
         public static void LaunchSummationMenu()
         {
             UserInterface.PrintPowerMenu();
@@ -42,6 +74,13 @@ namespace Practica_Programacion_01
             ControllerUtilities.WaitForInputToContinue("Pulse una tecla para continuar");
         }
 
+        /// <summary>
+        /// Esta función lanzará el controlador del submenú de potencias
+        /// en base 2. Pedirá un número al usuario, e imprimirá por
+        /// pantalla su potencia en base 2.
+        /// Cuando el controlador cumple su función, espera input 
+        /// del usuario para regresar al menú principal.
+        /// </summary>
         public static void LaunchPowerMenu()
         {
             UserInterface.PrintSummationMenu();
@@ -51,6 +90,13 @@ namespace Practica_Programacion_01
             ControllerUtilities.WaitForInputToContinue("Pulse una tecla para continuar");
         }
 
+        /// <summary>
+        /// Esta función lanzará el controlador del menú principal.
+        /// A raíz del mismo, el usuario puede seleccionar distintas
+        /// opciones para acceder a cada uno de los submenús o salir 
+        /// del programa. Los submenús desempeñarán una función concreta 
+        /// y cuando acaben, regresarán al menú principal.
+        /// </summary>
         public static void LaunchMainMenu()
         {
             while (true)
@@ -86,29 +132,12 @@ namespace Practica_Programacion_01
                         System.Console.Clear();
                         break;
                 }
-            }
-            
-            
+            }                        
         }
+
         static void Main(string[] args)
-        {
-            //Console.BackgroundColor = ConsoleColor.Red;
-            //System.Console.WriteLine("Probando los colores", Console.ForegroundColor = ConsoleColor.Red);
-            //Console.WriteLine("Texto en color normal", Console.ForegroundColor = ConsoleColor.White);
-            //Console.WriteLine(MathsModel.Power(2, 4));
-            /*
-            while (true)
-            {
-                int value = Convert.ToInt32(Console.ReadLine());
-                MathsModel.FibonacciFunction(value);
-            }
-            */
-            
-            LaunchMainMenu();
-            
-            
-
-
+        {            
+            LaunchMainMenu();                        
         }
     }
 }
