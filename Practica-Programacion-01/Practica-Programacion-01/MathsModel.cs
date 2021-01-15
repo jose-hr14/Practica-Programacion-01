@@ -56,9 +56,9 @@ namespace Practica_Programacion_01
             if (value == 0)
                 return 0;
             int result = 1;
-            for (int i = 1; i <= value; i++)
+            for (int i = 0; i < value; i++)
             {
-                result *= i;
+                result *= (i + 1);
             }
             return result;
         }
@@ -78,9 +78,9 @@ namespace Practica_Programacion_01
         {
             if (value == 0 || value == 1 || value < 0)
                 return false;
-            for (int i = 1; i < value; i++)
+            for (int i = 0; i < (value - 1); i++)
             {                                    
-                if (value % i == 0 && i != 1)
+                if (value % (i + 1) == 0 && (i + 1) != 1)
                     return false;                
             }
             return true;            
